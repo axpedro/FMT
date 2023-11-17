@@ -36,7 +36,7 @@ border-radius: 50%;
 
 }
 .header{
-    position: fixed;
+position: fixed;
 width: 100vw;
 height: 4em;
 background-color: var(--blue);
