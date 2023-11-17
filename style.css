@@ -1,3 +1,10 @@
+:root{
+    --orange: #fca311;
+    --blue: #023047;
+    --white: #ffffff;
+}
+
+
 *{
 
 margin: 0;
@@ -5,12 +12,34 @@ padding: 0;
 box-sizing: border-box;
 text-decoration: none;
 font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+
+.titulo {
+
+font-size: 8em;
+color: var(--orange);
+
+}
+.subtitulo-secao {
+    font-size: 2em;
+}
+#link-home{
+font-size: 3em;
+color: #fca311;
+position: fixed;
+z-index: 10;
+right: 20px;
+bottom: 50px;
+background-color: #ffffff;
+border-radius: 50%;
+}
 
 }
 .header{
+    position: fixed;
 width: 100vw;
 height: 4em;
-background-color: #023047 ;
+background-color: var(--blue);
 
 
 
@@ -22,6 +51,7 @@ color: #ffb703;
 padding: 0 1em;
 
 
+
 }
 
 .header-menu{
@@ -31,5 +61,90 @@ justify-content: center;
 align-items: center;
 
 
+}
+
+#home{
+width: 100vw;
+min-height: 100vh;
+flex-direction: column;
+justify-content: center;
+padding: 0 4em;
+color: var(--orange);
+display: flex;
+background-image: url("./assets/images/image-home.jpg");
+background-position: center;
+background-size: cover;
+}
+#home h2{
+color: var(--white);
+
+}
+#sobre{
+
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+}
+#dados_contato{
+width: 100vw;
+height: 50vh;
+background-color: var(--blue);
+color: var(--white);
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0 4em;
+
+}
+#dados_contato a{
+color: -white;
+
+}
+#dados_contato ul {
+list-style: none;
+font-size: 1.5;
+
+}
+#dados_contato i{
+padding-right: 1em;
+
+}
+#formacoes{
+    width: 100vw;
+    height: 50vh;
+    padding: 4em;
+}
+#formacoes ol {
+display: flex;
+
+
+
+}
+#formacoes li{
+    padding-right: 2em;
+}
+
+#experiencias{
+display: flex;
+width: 100vw;
+    height: 50vh;
+    padding: 4em;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#footer{
+    width: 100vw;
+    background-color: var(--orange);
+    display: flex;
+    padding: 1em 4em;
+    justify-content: space-around;
+}
+#footer a{
+color: var(--blue);
+padding-right: 4em;
 
 }
